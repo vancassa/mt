@@ -1,10 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 .App {
-  text-align: center;
+  background-color: #11100d;
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 131, 3);
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  white-space: pre-line;
+  font-size: 42px;
+  background: -webkit-linear-gradient(180deg,rgb(168, 97, 4)
+  ,rgb(255, 254, 193));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-hello {
+  font-family:'Times New Roman', Times, serif;
+  position: center;
+  white-space: pre-line;
+  color: rgb(255, 131, 3);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,19 +39,9 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
-  color: #61dafb;
+  color: #eaedee;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +51,304 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p{
+  font-weight: normal;
+  text-align: center;
+  white-space: pre-line;
+  font-family:'Montserrat', sans-serif;
+  color:rgb(163, 87, 9);
+}
+p.title-hello{
+  display: inline-block;
+
+}
+
+h2{
+  text-align: center;
+  white-space: pre-line;
+}
+
+.container-fluid{
+  width: 100%;
+}
+
+.web-section{
+  height: 100vh;
+ 
+  padding: 1rem;
+}
+
+.web-section-content{
+  width: 100%;
+  text-align: center;
+}
+
+.box{
+  margin: 20px;
+  padding: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(136, 73, 9, 0.827); 
+  border-image: initial;
+  
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .13em solid rgb(255, 131, 3); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .13em; /* Adjust as needed */
+  animation: 
+    typing 5.5s steps(40, end),
+    blink-caret .85s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 131, 3); }
+}
+.typewriter-box{
+        
+            display: inline-block;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 3000ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+/*
+Menu
+*/
+
+/* [1] */
+/* [2] */
+/* [3] */
+/* [4] */
+/* [5] */
+/* [6] */
+/* Styles: */
+/*
+ .icon {
+	 
+	 background: red;
+	 cursor: pointer;
+	 margin: auto;
+	 color: deepskyblue;
+	 border-radius: 10%;
+	 height: 15px;
+	 width: 150px;
+	 line-height: 150px;
+	 text-align: center;
+	 font-size: 2.75em;
+	
+	 transition: 0.24s 0.2s;
+}
+ .icon:hover {
+	 background: transparent;
+}
+ .menu {
+	 position: absolute;
+	 top: -75px;
+	 left: -75px;
+	 border: 180px solid transparent;
+	 cursor: default;
+	 border-radius: 30%;
+	 transform: scale(0);
+	 transition: transform 1.4s 0.07s;
+	 z-index: -5;
+}
+ .spread {
+	 position: absolute;
+	 top: -100px;
+	 left: -100px;
+	 transform-origin: 110px 100px;
+	 transition: all 0.5s 0.1s;
+}
+ .icon:hover {
+	/* Where all the MAGIC happens: */
+
+
+/*
+ .icon:hover .menu {
+	 transition: transform 0.4s 0.08s, z-index 0s 0.5s;
+	 transform: scale(1);
+
+}
+ .icon:hover .spread, .icon:hover .unit {
+	 transition: all 0.6s;
+}
+ .icon:hover .spread:nth-child(1) {
+	 transition-delay: 0.02s;
+	 transform: rotate(24deg);
+}
+ .icon:hover .spread:nth-child(1) .unit {
+	 transition-delay: 0.04s;
+	 transform: rotate(696deg);
+}
+ .icon:hover .spread:nth-child(2) {
+	 transition-delay: 0.04s;
+	 transform: rotate(3deg);
+}
+ .icon:hover .spread:nth-child(2) .unit {
+	 transition-delay: 0.08s;
+	 transform: rotate(717deg);
+}
+ .icon:hover .spread:nth-child(3) {
+	 transition-delay: 0.06s;
+	 transform: rotate(-18deg);
+}
+ .icon:hover .spread:nth-child(3) .unit {
+	 transition-delay: 0.12s;
+	 transform: rotate(738deg);
+}
+ .icon:hover .spread:nth-child(4) {
+	 transition-delay: 0.08s;
+	 transform: rotate(-39deg);
+}
+ .icon:hover .spread:nth-child(4) .unit {
+	 transition-delay: 0.16s;
+	 transform: rotate(759deg);
+}
+ .icon:hover .spread:nth-child(5) {
+	 transition-delay: 0.1s;
+	 transform: rotate(-60deg);
+}
+ .icon:hover .spread:nth-child(5) .unit {
+	 transition-delay: 0.2s;
+	 transform: rotate(780deg);
+}
+
+*/
+/* END .icon:hover 
+
+ .unit {
+	 position: absolute;
+	 background: white;
+	 font-size: 30%;
+	 text-decoration: none;
+	 width: 0px;
+	 height: 0px;
+	 line-height: 0px;
+	 color: dodgerblue;
+	 border-radius: 10%;
+	 transition: 0.6s;
+}
+
+*/
+/* Just CodePen layout stuff: */
+/*
+ body, a, ul, li {
+	 margin: 0;
+	 outline: 0;
+	 padding: 0;
+	 list-style: none;
+}
+ html, body {
+	 height: 100%;
+	 min-height: 300px;
+}
+ body {
+	 font-family: sans-serif;
+	 background:#11100d;
+	 transform: translate3d(0, 0, 0);
+}
+ .icon {
+	 top: 50%;
+	 margin-top: -75px;
+}
+ 
+.positionMenu{
+  position: fixed;
+  bottom:80px;
+  right:20px;
+}
+ */
+ .positionMenu{
+  
+}
+/* Dropup Button */
+.dropbtn {
+  background-color: #11100d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+  position: absolute;
+  bottom: 20px;
+  right: 100px;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  background-color: transparent;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropup */
+.dropup-content a {
+  color: rgb(255, 254, 193);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: x-large;
+}
+
+/* Change color of dropup links on hover */
+.dropup-content a:hover {background-color: rgb(168, 97, 4)}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .dropbtn {
+  background-color: #11100d;
+}
+.menu-button {
+  width: 35px;
+  height: 4px;
+  background-color: rgb(255, 131, 3);
+  margin: 6px 0;
+}
+
+.video{
+ 
 }
