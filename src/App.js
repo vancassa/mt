@@ -147,7 +147,6 @@ function App() {
 
          </FadeInSection>
 
-
          <FadeInSection>
          <section className="web-section" id="contact">
          <h2>Contact Me</h2>
