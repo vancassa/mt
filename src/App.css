@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 .App {
   background-color: #11100d;
-  
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,17 +17,16 @@
 }
 
 .title {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   white-space: pre-line;
   font-size: 42px;
-  background: -webkit-linear-gradient(180deg,rgb(168, 97, 4)
-  ,rgb(255, 254, 193));
+  background: -webkit-linear-gradient(180deg, rgb(168, 97, 4), rgb(255, 254, 193));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .title-hello {
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   position: center;
   white-space: pre-line;
   color: rgb(255, 131, 3);
@@ -38,7 +37,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 
 .App-link {
   color: #eaedee;
@@ -59,81 +57,84 @@ section {
   justify-content: center;
 }
 
-p{
+p {
   font-weight: normal;
   text-align: center;
   white-space: pre-line;
-  font-family:'Montserrat', sans-serif;
-  color:rgb(163, 87, 9);
+  font-family: "Montserrat", sans-serif;
+  color: rgb(163, 87, 9);
 }
-p.title-hello{
+p.title-hello {
   display: inline-block;
-
 }
 
-h2{
+h2 {
   text-align: center;
   white-space: pre-line;
 }
 
-.container-fluid{
+.container-fluid {
   width: 100%;
 }
 
-.web-section{
+.web-section {
   height: 100vh;
- 
+
   padding: 1rem;
 }
 
-.web-section-content{
+.web-section-content {
   width: 100%;
   text-align: center;
 }
 
-.box{
+.box {
   margin: 20px;
   padding: 20px;
   border-width: 2px;
   border-style: solid;
-  border-color: rgba(136, 73, 9, 0.827); 
+  border-color: rgba(136, 73, 9, 0.827);
   border-image: initial;
-  
 }
 
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .13em solid rgb(255, 131, 3); /* The typwriter cursor */
+  border-right: 0.13em solid rgb(255, 131, 3); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .13em; /* Adjust as needed */
-  animation: 
-    typing 5.5s steps(40, end),
-    blink-caret .85s step-end infinite;
+  letter-spacing: 0.13em; /* Adjust as needed */
+  animation: typing 5.5s steps(40, end), blink-caret 0.85s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(255, 131, 3); }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 131, 3);
+  }
 }
-.typewriter-box{
-        
-            display: inline-block;
+.typewriter-box {
+  display: inline-block;
 }
 
 .fade-in-section {
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
-  transition: opacity 3000ms ease-out, transform 600ms ease-out,
-    visibility 1200ms ease-out;
+  transition: opacity 3000ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
   will-change: opacity, transform, visibility;
 }
 .fade-in-section.is-visible {
@@ -192,7 +193,6 @@ Menu
 }
  .icon:hover {
 	/* Where all the MAGIC happens: */
-
 
 /*
  .icon:hover .menu {
@@ -312,9 +312,9 @@ Menu
   position: absolute;
   bottom: 60px;
   background-color: transparent;
-  
+
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -324,12 +324,14 @@ Menu
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: x-large;
 }
 
 /* Change color of dropup links on hover */
-.dropup-content a:hover {background-color: rgb(168, 97, 4)}
+.dropup-content a:hover {
+  background-color: rgb(168, 97, 4);
+}
 
 /* Show the dropup menu on hover */
 .dropup:hover .dropup-content {
@@ -346,4 +348,3 @@ Menu
   background-color: rgb(255, 131, 3);
   margin: 6px 0;
 }
-
