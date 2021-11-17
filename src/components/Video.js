@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import video from "./angular-project.mkv";
+import video from "../assets/angular-project.mkv";
 
 
 class Video extends Component {
